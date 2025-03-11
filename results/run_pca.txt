@@ -1,0 +1,471 @@
+1/1 [==============================] - 0s 138ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.0046570000000000005 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.0066103333333333335 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 99ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.0066103333333333335 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 99ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.005085 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f956c555a20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 97ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.007461 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f956c431510> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.007461 17.316397384000002
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.006698666666666666 17.317699466666667
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 101ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.005431666666666667 17.320303632
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 103ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.005431666666666667 17.320303632
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 121ms/step
+predicted workload(in rps): 1
+500m 512Mi
+0.0038286666666666664 17.320303632
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+0
+1/1 [==============================] - 0s 108ms/step
+predicted workload(in rps): 1
+500m 512Mi
+166.33249566666666 67.32678844533334
+curr rps 1
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+78774
+1/1 [==============================] - 0s 115ms/step
+predicted workload(in rps): 127504
+500m 512Mi
+166.33249566666666 67.32678844533334
+curr rps 78774
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+196080
+1/1 [==============================] - 0s 113ms/step
+predicted workload(in rps): 277564
+500m 512Mi
+441.89897199999996 90.55203697066666
+curr rps 196080
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+196080
+1/1 [==============================] - 0s 108ms/step
+predicted workload(in rps): 239311
+500m 512Mi
+498.58868966666665 96.95177327733332
+curr rps 196080
+max workload per pod:  196080
+predicted future pods:  1
+Scaled up to 4 replicas
+331767
+1/1 [==============================] - 0s 112ms/step
+predicted workload(in rps): 438239
+500m 512Mi
+498.58868966666665 96.95177327733332
+curr rps 331767
+max workload per pod:  331767
+predicted future pods:  1
+Scaled up to 5 replicas
+461474
+1/1 [==============================] - 0s 119ms/step
+predicted workload(in rps): 575020
+500m 512Mi
+500.36240666666663 88.50906926666669
+curr rps 461474
+max workload per pod:  461474
+predicted future pods:  1
+Scaled up to 6 replicas
+595432
+1/1 [==============================] - 0s 116ms/step
+predicted workload(in rps): 716665
+500m 512Mi
+346.0327666 69.1968395712
+curr rps 595432
+max workload per pod:  595432
+predicted future pods:  1
+Scaled up to 7 replicas
+595432
+1/1 [==============================] - 0s 311ms/step
+predicted workload(in rps): 655992
+500m 512Mi
+346.0327666 69.1968395712
+curr rps 595432
+max workload per pod:  595432
+predicted future pods:  1
+Scaled up to 8 replicas
+748016
+1/1 [==============================] - 0s 129ms/step
+predicted workload(in rps): 879600
+500m 512Mi
+336.76314716666667 63.26233740133333
+curr rps 748016
+max workload per pod:  748016
+predicted future pods:  1
+Scaled up to 9 replicas
+894943
+1/1 [==============================] - 0s 119ms/step
+predicted workload(in rps): 1022821
+500m 512Mi
+252.51013262499998 49.89108773700001
+curr rps 894943
+max workload per pod:  894943
+predicted future pods:  1
+Scaled up to 10 replicas
+894943
+1/1 [==============================] - 0s 128ms/step
+predicted workload(in rps): 956792
+500m 512Mi
+226.35835011111112 46.437042196444445
+curr rps 894943
+max workload per pod:  894943
+predicted future pods:  1
+Scaled up to 11 replicas
+1035025
+1/1 [==============================] - 0s 155ms/step
+predicted workload(in rps): 1172230
+500m 512Mi
+226.35835011111112 46.437042196444445
+curr rps 1035025
+max workload per pod:  1035025
+predicted future pods:  1
+Scaled up to 12 replicas
+1199136
+1/1 [==============================] - 0s 179ms/step
+predicted workload(in rps): 1344113
+500m 512Mi
+326.4821495 61.5132497552
+curr rps 1199136
+max workload per pod:  1199136
+predicted future pods:  1
+Scaled up to 13 replicas
+1199136
+1/1 [==============================] - 0s 177ms/step
+predicted workload(in rps): 1269134
+500m 512Mi
+466.38200891666673 73.44397281333335
+curr rps 1199136
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 12 replicas
+1473677
+1/1 [==============================] - 0s 211ms/step
+predicted workload(in rps): 1663863
+500m 512Mi
+466.38200891666673 73.44397281333335
+curr rps 1473677
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 11 replicas
+1858695
+1/1 [==============================] - 0s 183ms/step
+predicted workload(in rps): 2109568
+500m 512Mi
+489.5495653076922 75.38006957846154
+curr rps 1858695
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 10 replicas
+1858695
+1/1 [==============================] - 0s 138ms/step
+predicted workload(in rps): 1973984
+500m 512Mi
+460.9207766923077 75.3322931606154
+curr rps 1858695
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 9 replicas
+2107906
+1/1 [==============================] - 0s 131ms/step
+predicted workload(in rps): 2331349
+500m 512Mi
+499.4293778181818 76.96054298254545
+curr rps 2107906
+max workload per pod:  2107906
+predicted future pods:  1
+Scaled up to 10 replicas
+2343154
+1/1 [==============================] - 0s 169ms/step
+predicted workload(in rps): 2567945
+500m 512Mi
+500.0190761999999 78.7112878248
+curr rps 2343154
+max workload per pod:  2343154
+predicted future pods:  1
+Scaled up to 11 replicas
+
+2571118
+1/1 [==============================] - 0s 173ms/step
+predicted workload(in rps): 2805444
+500m 512Mi
+495.38359136363636 81.011677272
+curr rps 2571118
+max workload per pod:  2571118
+predicted future pods:  1
+Scaled up to 12 replicas
+2571118
+1/1 [==============================] - 0s 160ms/step
+predicted workload(in rps): 2705579
+500m 512Mi
+495.0016119 82.3331609704
+curr rps 2571118
+max workload per pod:  2571118
+predicted future pods:  1
+Scaled up to 13 replicas
+2840982
+1/1 [==============================] - 0s 182ms/step
+predicted workload(in rps): 3093598
+500m 512Mi
+480.38137863636365 80.53440478909091
+curr rps 2840982
+max workload per pod:  2840982
+predicted future pods:  1
+Scaled up to 14 replicas
+3107759
+1/1 [==============================] - 0s 255ms/step
+predicted workload(in rps): 3364883
+500m 512Mi
+483.4766772307693 78.9611975526154
+curr rps 3107759
+max workload per pod:  3107759
+predicted future pods:  1
+Scaled up to 15 replicas
+3107759
+1/1 [==============================] - 0s 256ms/step
+predicted workload(in rps): 3252222
+500m 512Mi
+496.96305185714294 78.50470310914285
+curr rps 3107759
+max workload per pod:  3107759
+predicted future pods:  1
+Scaled up to 16 replicas
+3476234
+1/1 [==============================] - 0s 259ms/step
+predicted workload(in rps): 3782990
+500m 512Mi
+496.96305185714294 78.50470310914285
+curr rps 3476234
+max workload per pod:  3476234
+predicted future pods:  1
+Scaled up to 17 replicas
+4003494
+1/1 [==============================] - 0s 246ms/step
+predicted workload(in rps): 4364757
+500m 512Mi
+497.76562393333336 79.4390218272
+curr rps 4003494
+max workload per pod:  4003494
+predicted future pods:  1
+Scaled up to 18 replicas
+4003494
+1/1 [==============================] - 0s 292ms/step
+predicted workload(in rps): 4163025
+500m 512Mi
+470.2612524705882 77.51949156
+curr rps 4003494
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 16 replicas
+4724750
+1/1 [==============================] - 0s 103ms/step
+predicted workload(in rps): 5198071
+500m 512Mi
+470.2612524705882 77.51949156
+curr rps 4724750
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 14 replicas
+5215331
+1/1 [==============================] - 0s 97ms/step
+predicted workload(in rps): 5640131
+500m 512Mi
+444.77135066666665 72.75213288977778
+curr rps 5215331
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 12 replicas
+5368971
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 5676063
+500m 512Mi
+302.75373800000006 70.89492897955554
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 11 replicas
+5368971
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 5599531
+500m 512Mi
+317.48110287500003 74.99752019499999
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 10 replicas
+5368971
+1/1 [==============================] - 0s 99ms/step
+predicted workload(in rps): 5585431
+500m 512Mi
+17.871579357142856 71.82194983428572
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 9 replicas
+5368971
+1/1 [==============================] - 0s 95ms/step
+predicted workload(in rps): 5571289
+500m 512Mi
+0.6727270833333335 72.663048734
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 8 replicas
+5368971
+1/1 [==============================] - 0s 96ms/step
+predicted workload(in rps): 5543628
+500m 512Mi
+0.4221087272727273 77.51025861018182
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 7 replicas
+5368971
+1/1 [==============================] - 0s 99ms/step
+predicted workload(in rps): 5530811
+500m 512Mi
+2.068643 55.28278419520001
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 6 replicas
+5368971
+1/1 [==============================] - 0s 103ms/step
+predicted workload(in rps): 5493116
+500m 512Mi
+2.746621444444444 31.57116439111111
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 5 replicas
+5368971
+1/1 [==============================] - 0s 98ms/step
+predicted workload(in rps): 5464392
+500m 512Mi
+1.188788375 33.043440113
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 4 replicas
+5368971
+1/1 [==============================] - 0s 104ms/step
+predicted workload(in rps): 5415509
+500m 512Mi
+0.23119228571428568 34.91181248228572
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+5368971
+1/1 [==============================] - 0s 97ms/step
+predicted workload(in rps): 5380762
+500m 512Mi
+0.2615611666666667 27.865220108
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+5368971
+1/1 [==============================] - 0s 99ms/step
+predicted workload(in rps): 5368972
+500m 512Mi
+0.004718399999999999 29.571859859200003
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+5368971
+1/1 [==============================] - 0s 105ms/step
+predicted workload(in rps): 5368972
+500m 512Mi
+0.00417625 32.120100742
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+5368971
+1/1 [==============================] - 0s 97ms/step
+predicted workload(in rps): 5368972
+500m 512Mi
+0.003857666666666667 35.95440867466667
+curr rps 5368971
+max workload per pod:  99999999999
+predicted future pods:  0
+Scaled down to 3 replicas
+

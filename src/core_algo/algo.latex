@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\begin{document}
+\begin{algorithmic}
+\begin{algorithm}
+\caption{Auto-scaling Algorithm}
+\label{alg:auto_scaling}
+
+\textbf{Input:} \emph{predicted\_workload}  \Comment{predicted workload in the next interval in rps}
+ \emph{current\_workload}   \Comment{current workload of the application in rps}
+
+\textbf{Output:} \emph{Scale UP/DOWN}    \Comment{in \#pods}
+
+\textbf{Initialization;}
+
+\While{system is running}{
+    \For{each CDT}{
+        \State \emph{resource\_limit} \leftarrow \emph{get\_resource\_limit()}
+    
+     \State \emph{resource\_utilization} \leftarrow\emph{get\_resource\_utilization()}
+        
+        \State \emph{max\_workload\_per\_pod} \leftarrow \(\frac{\text{resource\_limit} \times \text{current\_workload}}{\text{resource\_utilization}}\)
+        \State \emph{predicted\_future\_pods} \leftarrow \(\frac{\text{predicted\_workload}}{\text{max\_workload\_per\_pod}}\)
+        \State \emph{current\_pods} \leftarrow \emph{get\_replica\_count()}
+        
+\If{\emph{current\_pods + predicted\_future\_pods \textgreater  current\_pods}}
+
+            \State \emph{pods\_t+1} \leftarrow \emph{current\_pods + predicted\_future\_pods}
+            
+        \State \emph{SCALE\_UP(pods\_t+1)}
+        
+        
+
+    
+     \ElsIf {\emph{predicted\_future\_pods \textless current\_pods}}
+         \State \emph{pods\_t} \leftarrow \emph{current\_pods}
+  
+        \State \emph{pods\_t+1} \leftarrow\(\max(\text{predicted\_future\_pods, pods\_minimum})\)
+        
+            \State \emph{podssurplus} \leftarrow (\emph{pods\_t} - \emph{pods\_t+1}) \(\times\) \emph{RRS}
+            
+            \State \emph{pods\_t+1} \leftarrow \emph{pods\_t} - (\emph{podssurplus})
+            
+            \State \emph{SCALE\_DOWN(pods\_t+1)}
+        
+     
+
+   \Else  
+           \State \emph{Do nothing}
+        
+        \EndIf
+             \EndFor
+               
+
+
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Function get\_resource\_utilization()}
+\label{alg:get_resource_utilization}
+
+\Function{get\_resource\_utilization}{}
+\State \emph{Avg\_Resource1\_usage, Avg\_Resource2\_usage, \ldots, Avg\_ResourceN\_usage}
+\For{each pod in workload resource (Deployment or StatefulSet)}
+    \For{each container in pod}
+        \State \emph{Resource1\_usage} \leftarrow \emph{get\_resource\_utilization(Resource1)}
+        
+        \State \emph{Resource2\_usage} \leftarrow \emph{get\_resource\_utilization(Resource2)}
+        
+        \State \ldots
+        \State \emph{ResourceN\_usage} \leftarrow \emph{get\_resource\_utilization(ResourceN)}
+        
+        \State \emph{Avg\_Resource1\_usage} \leftarrow \emph{Avg\_Resource1\_usage + Resource1\_usage}
+        
+        \State \emph{Avg\_Resource2\_usage} \leftarrow \emph{Avg\_Resource2\_usage + Resource2\_usage}
+        
+        \State \ldots
+        \State \emph{Avg\_ResourceN\_usage} \leftarrow \emph{Avg\_ResourceN\_usage + ResourceN\_usage}
+        
+
+       \EndFor
+ \EndFor
+ 
+\State \emph{Avg\_Resource1\_usage} \leftarrow \emph{Avg\_Resource1\_usage / N}
+
+\State \emph{Avg\_Resource2\_usage} \leftarrow \emph{Avg\_Resource2\_usage / N}
+
+\State \ldots
+\State \emph{Avg\_ResourceN\_usage} \leftarrow \emph{Avg\_ResourceN\_usage / N}
+
+
+\State \emph{Resource} \leftarrow \emph{get\_resource\_utilization\_of\_bottlenecked\_resource(Avg\_Resource1\_usage, Avg\_Resource2\_usage, \ldots, Avg\_ResourceN\_usage)}
+\State \Return \emph{Resource}
+\EndFunction
+
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Function get\_resource\_limit()}
+\label{alg:get_resource_limit}
+
+\Function{get\_resource\_limit}{}
+\State \emph{Resource} \leftarrow \emph{get\_resource\_limits\_of\_bottlenecked\_resource(Avg\_Resource1\_usage, Avg\_Resource2\_usage,
+\ldots, Avg\_ResourceN\_usage)}
+\leftarrow.
+
+\State \Return \emph{Resource}
+\EndFunction
+
+\end{algorithm}
+
+\end{document}
+

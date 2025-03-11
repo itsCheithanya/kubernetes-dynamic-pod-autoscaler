@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loadtestv2
+spec:
+  replicas: 3  
+  selector:
+    matchLabels:
+      app: loadtestv2
+  template:
+    metadata:
+      labels:
+        app: loadtestv2
+    spec:
+      containers:
+        - name: loadtestv2
+          image: cheithanya/aik8sloadtest # Replace with your Application Docker image 
+          ports:
+            - containerPort: 3000  # Specify the port on which your application listens
+          resources:
+            limits:
+              cpu: "0.5"  # Maximum CPU usage allowed by the container
+              memory: "512Mi"  # Maximum memory usage allowed by the container
+            

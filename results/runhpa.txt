@@ -1,0 +1,88 @@
+0
+Deployment: loadtestv2
+Desired Replicas: 5
+Running Pods: 5
+0
+Deployment: loadtestv2
+Desired Replicas: 5
+Running Pods: 5
+102526
+Deployment: loadtestv2
+Desired Replicas: 5
+Running Pods: 5
+239597
+Deployment: loadtestv2
+Desired Replicas: 7
+Running Pods: 7
+526075
+Deployment: loadtestv2
+Desired Replicas: 7
+Running Pods: 7
+681773
+Deployment: loadtestv2
+Desired Replicas: 10
+Running Pods: 7
+1024130
+Deployment: loadtestv2
+Desired Replicas: 10
+Running Pods: 10
+1200679
+Deployment: loadtestv2
+Desired Replicas: 10
+Running Pods: 10
+1394645
+Deployment: loadtestv2
+Desired Replicas: 14
+Running Pods: 14
+1815428
+Deployment: loadtestv2
+Desired Replicas: 14
+Running Pods: 14
+2001189
+Deployment: loadtestv2
+Desired Replicas: 14
+Running Pods: 14
+2256506
+Deployment: loadtestv2
+Desired Replicas: 17
+Running Pods: 17
+2842718
+Deployment: loadtestv2
+Desired Replicas: 20
+Running Pods: 20
+3174001
+Deployment: loadtestv2
+Desired Replicas: 20
+Running Pods: 20
+3879112
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+5558239
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6409920
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6567483
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6567483
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6567483
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6567483
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27
+6567483
+Deployment: loadtestv2
+Desired Replicas: 27
+Running Pods: 27

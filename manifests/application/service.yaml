@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadtest-service
+spec:
+  selector:
+    app: loadtestv2
+  ports:
+    - protocol: TCP
+      port: 3000  # The port on which the service will be exposed
+      targetPort: 3000  # The port to which the service should forward traffic
+  type: LoadBalancer  # Expose the service externally (assumes you're using a cloud provider supporting LoadBalancer)
+
